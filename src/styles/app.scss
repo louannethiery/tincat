@@ -1,5 +1,42 @@
-$color: red;
+input:focus{
+    outline: none;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(84, 120, 160, 0.849), rgba(79, 162, 201, 0.815));
+}
 
 h1{
-    color: $color;
+    font-family: 'Pacifico', cursive;
 }
+
+.form-container ::placeholder{
+    color: whitesmoke;
+}
+
+.form-container form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container input{
+    padding: 20px;
+    font-size: 1.8rem;
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+}
+
+.form-container input[type=sumbit]{
+    margin-top:2rem;
+    border: 1px solid grey;
+    transition: all .3s;
+}
+
+.form-container h1{
+    text-align: center;
+}
+

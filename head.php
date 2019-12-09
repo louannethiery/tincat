@@ -7,7 +7,3 @@
     <title>Document</title>
     <link rel="stylesheet" href="dist/css/styles.css">
 </head>
-<body>
-    <h1>TINCAT</h1>
-</body>
-</html>
