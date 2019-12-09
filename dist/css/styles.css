@@ -31,7 +31,7 @@ h1 {
   background: transparent;
 }
 
-.form-container input[type=sumbit] {
+.form-container input[type=submit] {
   margin-top: 2rem;
   border: 1px solid grey;
   transition: all 0.3s;
