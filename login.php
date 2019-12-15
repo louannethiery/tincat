@@ -1,1 +1,1 @@
-.
+<?php require "head.php"; ?>

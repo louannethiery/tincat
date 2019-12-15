@@ -36,6 +36,12 @@ h1{
     transition: all .3s;
 }
 
+.form-container input[type=submit]:hover{
+    background: #34495e;
+    color: #fff;
+    cursor: pointer;
+}
+
 .form-container h1{
     text-align: center;
 }
