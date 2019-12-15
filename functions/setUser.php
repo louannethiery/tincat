@@ -13,19 +13,19 @@ try {
     print "Erreur !: " . $e->getMessage() . "<br/>";
     die();
 }
-var_dump($_POST);
 
 // Avant d'insérer en base de données faire les vérifications suivantes
     // Vérifier si le pseudo ou le mot de passe est vide
-    if ( empty( $email ) || empty( $pseudo ) || empty( $password ) ) {
-        echo "Vous avez oublié de rentrer des informations";
+    if ( empty( $pseudo ) || empty( $password ) || empty( $email )) {
+        echo "Merci de remplir le champ du formulaire vide";
     }
     // Ajouter un input confirm password et vérifier si les deux sont égaux
 
 // Ajouter un champ email
 
 // Etape 3: prepare request
-$req = $db->prepare("INSERT INTO users (pseudo, password) VALUES(:pseudo, :password)");
+$req = $db->prepare("INSERT INTO users (pseudo, password, email) VALUES(:pseudo, :password, :email)");
 $req->bindParam(":pseudo", $_POST["pseudo"]);
 $req->bindParam(":password", $_POST["password"]);
+$req->bindParam(":email", $_POST["email"]);
 $req->execute();
