@@ -16,9 +16,9 @@ try {
 
 // Avant d'insérer en base de données faire les vérifications suivantes
     // Vérifier si le pseudo ou le mot de passe est vide
-    if ( empty( $pseudo ) || empty( $password )) {
-        echo "Merci de remplir le champ du formulaire vide";
-    }
+    if(empty($_POST['pseudo']) OR empty($_POST['email']) OR empty($_POST['password']) OR empty($_POST['password2'])){
+        echo '<p class="vide">Merci de remplir le champ du formulaire vide</p>';
+        } 
     // Ajouter un input confirm password et vérifier si les deux sont égaux
     if ($_POST['password'] != $_POST['password2']) {
         echo 'Les mots de passe doivent être identiques';
