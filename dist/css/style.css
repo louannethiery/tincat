@@ -1,0 +1,55 @@
+input:focus {
+  outline: none;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(rgba(58, 108, 182, 0.884), rgba(109, 174, 226, 0.856));
+}
+
+h1 {
+  font-family: "Pacifico", cursive;
+}
+
+.form-container ::placeholder {
+  color: whitesmoke;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container input {
+  padding: 20px;
+  font-size: 1.8rem;
+  border: none;
+  border-bottom: 1px solid black;
+  background: transparent;
+}
+
+.form-container input[type=submit] {
+  margin-top: 2rem;
+  border: 1px solid grey;
+  transition: all 0.3s;
+}
+
+.form-container input[type=submit]:hover {
+  background: #34495e;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form-container h1 {
+  text-align: center;
+}
+
+.message {
+  color: #962525;
+  font-size: 1.3rem;
+}
+
+/*# sourceMappingURL=style.css.map */
