@@ -24,9 +24,7 @@ if( !empty($_POST["pseudo"]) && !empty($_POST["password"]) ){
     }else{
         session_start();
         $_SESSION["pseudo"] = $result["pseudo"];
+        header("Location: ../profils.php");
     }
-
-    var_dump($result);
-    
     
 }

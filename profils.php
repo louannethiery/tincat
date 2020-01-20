@@ -5,7 +5,7 @@
         header("Location: login.php");
     }
     echo "Bonjour " . $_SESSION["pseudo"];
-    ?>
+?>
 
 <!-- ************************ -->
 <!-- Afficher les utilisateurs stockés dans la BDD sauf moi -->
